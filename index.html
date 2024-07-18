@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride With The Mouse</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- Reference: "Top Navigation Bar." W3Schools, https://www.w3schools.com/howto/howto_js_topnav.asp. Accessed June 26, 2024. -->
+    <div class="NavBarHome">
+        <a class="active" href="index.html">RideWithTheMouse!</a>
+        <a href="animal-kingdom.html">Animal Kingdom</a>
+        <a href="epcot.html">Epcot</a>
+        <a href="hollywood-studios.html">Hollywood Studios</a>
+        <a href="magic-kingdom.html">Magic Kingdom</a>
+    </div>
+
+    <div class="SideBySide">
+        <div class="Box">
+            <h1>Plan a trip to Disney World!</h1>
+            <img src="Images/MickeyMouseWDW.webp" class="MickeyImage" alt="Mickey Mouse standing in front of Cinderella's Castle">
+            <!-- Retrieved from https://www.fox7austin.com/news/special-hidden-mickey-to-make-annual-appearance-for-his-birthday-at-disney-world -->
+        </div>
+        <div class="Box">
+            <p class="text">
+                The purpose of my website is to help users plan a trip to Walt Disney World. 
+                There are so many rides to ride, attractions to see, and characters to meet – it is impossible to do it all in one vacation. 
+                A trip to Disney World is extremely expensive, so it is important to plan ahead in order to get as much out of your vacation as possible.
+            </p>
+            <p class="text">
+                My website describes experiences located at the Resort -- there is nothing regarding airfare or hotels.
+            </p>
+            <p class="text">
+                The website is meant to cover recommendations based on my personal experience. Anything covered in my website may be subjective.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="BottomText">
+        <button class="Button" type="button" onclick="adjustFontSize()">Adjust Font Size</button>
+        <button class="Button" type="button" onclick="changeColorTheme()">Change Color Theme</button>
+        <button class="Button" type="button" onclick="makeReadable()">Make Readable</button>
+        <p class="link">
+            Buy tickets at the site <a class="link" href="https://disneyworld.disney.go.com">HERE</a>
+        </p>
+        <a class="link" href="mailto:lestertai2024@u.northwestern.edu">Email Me!</a>
+        <noscript>
+            <p>Your Javascript ain't working! These buttons will not work.</p>
+        </noscript>
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

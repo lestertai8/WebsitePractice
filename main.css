@@ -1,0 +1,245 @@
+/* Reference: "Top Navigation Bar." W3Schools, https://www.w3schools.com/howto/howto_js_topnav.asp. Accessed June 26, 2024. */
+
+/* Home Page Navigation Bar */
+.NavBarHome {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  .NavBarHome a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .NavBarHome a:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .NavBarHome a.active {
+    background-color: white;
+    color: black;
+  }
+
+  
+/* Animal Kingdom Nav Bar */
+.NavBarAK {
+    background-color: #3E982F;
+    overflow: hidden;
+  }
+  
+  .NavBarAK a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .NavBarAK a:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+/* Epcot Nav Bar */
+.NavBarEpcot {
+    background-color: #9260B0;
+    overflow: hidden;
+  }
+  
+  .NavBarEpcot a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .NavBarEpcot a:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+/* Hollywood Studios Nav Bar */
+.NavBarHS {
+    background-color: #814848;
+    overflow: hidden;
+  }
+  
+  .NavBarHS a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .NavBarHS a:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+/* Magic Kingdom Nav Bar */
+.NavBarMK {
+    background-color: #CFA5EF;
+    overflow: hidden;
+  }
+  
+  .NavBarMK a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .NavBarMK a:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+
+
+
+
+
+.link {
+  text-decoration: none;
+  color: purple;
+}
+
+.Button {
+  font-size: 25px;
+  border-radius: 20px;
+}
+
+.TextBox {
+    width: 90%;
+    height: 200px;
+    padding: 40px;
+}
+.TextBoxText {
+    font-family: cursive;
+    color: black;
+}
+
+.TextBoxTextAK {
+  font-family: cursive;
+  color: white;
+}
+
+
+
+
+.text {
+  font-family: cursive;
+  font-size: 18px;
+}
+
+
+.ParkName {
+    font-family: cursive;
+    text-align: center;
+    font-size: 80px;
+}
+
+.SideBySide {
+  display: flex;
+  padding: 30px;
+  gap: 50px;
+}
+
+.Box {
+  flex: 1;
+}
+
+
+.BoxLeft {
+  flex:0.75;
+  color: white;
+}
+
+.BoxRight {
+  flex:0.25;
+  text-align: center;
+  color: white;
+}
+
+
+.Tabs{
+  display: flex;
+  text-align: left;
+  font-size: 17px;
+}
+
+.TabCategory {
+  padding: 10px;
+}
+/* .TabCategory:active {
+  background-color: black;
+} */
+
+.BottomText {
+  text-align: center;
+  color: purple;
+  font-size: 50px;
+  font-family: cursive;
+}
+
+
+.MickeyImage {
+  width: 600px;
+}
+
+.ParkImage {
+  width: 90%;
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* Tablet or Phone */
+@media screen and (max-width: 768px){
+  .MickeyImage {
+    width: 80%;
+  }
+  .SideBySide {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .ParkImage {
+    width: 80%;
+  }
+  .TextBox {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+  }
+  .ParkName {
+    font-size: 60px;
+  }
+
+  .Tabs {
+    display: flex;
+    justify-content: center;
+  }
+}
