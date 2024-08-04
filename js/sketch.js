@@ -22,7 +22,7 @@ function setup() {
     clear();
 
 
-    fill(255, 215, 0, 90);
+    fill(255, 215, 0, 95);
     noStroke();
     sparkles.push(createVector(mouseX, mouseY));
 
