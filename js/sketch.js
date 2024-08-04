@@ -1,5 +1,10 @@
 // Copied from p5.js tutorial: https://p5js.org/tutorials/setting-up-your-environment/#vscode
 
+// Video Tutorial I used for creating a Mouse Trail: https://www.youtube.com/watch?v=jiwg4H8a3fI
+
+
+sparkles = [];
+
 function setup() {
   // Overlay a canvas on the website page.
     let cnv = createCanvas(document.documentElement.scrollWidth, document.documentElement.scrollHeight);
@@ -14,12 +19,22 @@ function setup() {
 
   function draw() {
     //when mouse button is pressed, circles turn black
+    clear();
+
 
     fill(255, 215, 0, 90);
     noStroke();
+    sparkles.push(createVector(mouseX, mouseY));
+
+    // Followed this tutorial to figure out how to limit the number of circles: https://www.youtube.com/watch?v=jiwg4H8a3fI
+    if (sparkles.length > 25) {
+      sparkles.shift();
+    }
   
-    //white circles drawn at mouse position
-    circle(mouseX, mouseY, random(10,25));
+    //yellow circles drawn at all prev mouse position
+    for (let i = 0; i < sparkles.length; i++) {
+      circle(sparkles[i].x, sparkles[i].y, i * random(0.25, 0.5));
+    }
   }
 
   function fixSizing() {
